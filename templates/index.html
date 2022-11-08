@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+      <hr size="10" color="orange">
+      <hr size="5" color="orange">
+      <center>
+        <img src="../static/union.png" alt="carImage" height="110", width="180">
+        <h1 color="blue">Union Finance Welcomes You</h1>
+        <h3><em>Check Eligibility for Loan</em></h3>
+        <hr size="5" color="orange">
+      <center>
+
+      <form action="/predict" method ="POST">
+
+        <br>
+        <br><br><br><br>
+
+        <label>Person Age           :<br></label><input type="text" name ="age"><br><br>
+        <label>Person Income        :<br></label><input type="text" name ="income"><br><br>
+        <label>Person Emp Length    :<br></label><input type="text" name ="emp_length"><br><br>
+        <label>Loan Amount          :<br></label><input type="text" name ="loan_amnt"><br><br>
+        <label>Interest Rate        :<br></label><input type="text" name ="interest"><br><br>
+        <label>Percent Income       :<br></label><input type="text" name ="perc_inc"><br><br>
+        <label>Credit History length:<br></label><input type="text" name ="hist_length"><br><br>
+
+
+
+        <h4>Are You Already Customer of Bank</h4>
+        <input type="radio"  name="on_file" value="Y"/>
+        <label for="radio_y">Yes</label>
+        <input type="radio"  name="on_file" value="N"/>
+        <label for="radion">No</label> <br>
+
+        <h4>Loan Intension </h4>
+        <input type="radio"  name="loan_intent" value="DEBTCONSOLIDATION"/>
+        <label for="radio-bhk-1">DEBTCONSOLIDATION</label>
+        <input type="radio"  name="loan_intent" value="EDUCATION"/>
+        <label for="radio-bhk-2">EDUCATION</label>
+        <input type="radio"  name="loan_intent" value="MEDICAL"/>
+        <label for="radio-bhk-2">MEDICAL</label>
+        <input type="radio"  name="loan_intent" value="PERSONAL"/>
+        <label for="radio-bhk-2">PERSONAL</label>
+        <input type="radio"  name="loan_intent" value="VENTURE"/>
+        <label for="radio-bhk-2">VENTURE</label> <br>
+
+
+        <h4>Person Home Ownership</h4>
+        <input type="radio"  name="home_own" value="MORTGAGE"/>
+        <label for="radio-1">MORTGAGE </label>
+        <input type="radio"  name="home_own" value="OWN"/>
+        <label for="radio-2">OWN</label>
+        <input type="radio"  name="home_own" value="RENT"/>
+        <label for="radio-2">RENT</label>
+        <input type="radio"  name="home_own" value="OTHER"/>
+        <label for="radio-2">OTHER</label><br>
+
+        <br><br>
+        <select name="grade">
+          <option value=""  selected="selected">Grade of Loan</option>
+          <option>A</option>
+          <option>B</option>
+          <option>C</option>
+          <option>D</option>
+          <option>E</option>
+          <option>F</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit">
+        <br><br>
+
+
+      </form>
+
+
+
+
+  </body>
+</html>
